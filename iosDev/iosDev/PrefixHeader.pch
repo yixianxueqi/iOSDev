@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  iosDev
+//
+//  Created by kingdee on 2024/1/5.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// oc全局定义
+#import "src/oc/YSGlobal.h.h"
+
+// oc全局引入类
+#import <Masonry/Masonry.h>
+
+// oc可使用swift
+#import "iosDev-swift.h"
+
+#endif /* PrefixHeader_pch */
