@@ -18,6 +18,7 @@ def swift_pod
   pod 'SnapKit', '5.6.0'
   pod 'SwiftyJSON', '5.0.1'
   pod 'Alamofire', '5.8.1'
+  pod 'Hue', '5.0.0'
 end
 
 target 'iosDev' do

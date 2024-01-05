@@ -7,3 +7,4 @@
 
 @_exported import SnapKit
 @_exported import SwiftyJSON
+@_exported import Hue

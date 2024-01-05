@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.8.1)
   - FDFullscreenPopGesture (1.1)
+  - Hue (5.0.0)
   - Masonry (1.1.0)
   - SnapKit (5.6.0)
   - SwiftyJSON (5.0.1)
@@ -8,6 +9,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (= 5.8.1)
   - FDFullscreenPopGesture (= 1.1)
+  - Hue (= 5.0.0)
   - Masonry (= 1.1.0)
   - SnapKit (= 5.6.0)
   - SwiftyJSON (= 5.0.1)
@@ -16,6 +18,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - FDFullscreenPopGesture
+    - Hue
     - Masonry
     - SnapKit
     - SwiftyJSON
@@ -23,10 +26,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 0744cd7ad18a9d2ecae664b863dee8cde492d3f8
+PODFILE CHECKSUM: d35f56aa10e50d11f65b77726407ea06b774d3b5
 
 COCOAPODS: 1.12.1

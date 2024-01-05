@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		05BEF5BC2B47DB08005C2405 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5BB2B47DB08005C2405 /* AppDelegate.m */; };
 		05BEF5BF2B47DB08005C2405 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5BE2B47DB08005C2405 /* SceneDelegate.m */; };
-		05BEF5C22B47DB08005C2405 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5C12B47DB08005C2405 /* ViewController.m */; };
 		05BEF5C52B47DB08005C2405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BEF5C32B47DB08005C2405 /* Main.storyboard */; };
 		05BEF5C72B47DB0B005C2405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BEF5C62B47DB0B005C2405 /* Assets.xcassets */; };
 		05BEF5CA2B47DB0B005C2405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BEF5C82B47DB0B005C2405 /* LaunchScreen.storyboard */; };
 		05BEF5CD2B47DB0B005C2405 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5CC2B47DB0B005C2405 /* main.m */; };
 		05BEF5D92B47E7C9005C2405 /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5D82B47E7C9005C2405 /* GlobalDefine.swift */; };
 		05BEF5DC2B47EC13005C2405 /* PrefixHeaderSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5DB2B47EC13005C2405 /* PrefixHeaderSwift.swift */; };
+		05BEF5E02B47EFA4005C2405 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5DF2B47EFA4005C2405 /* BaseNavigationController.swift */; };
+		05BEF5E52B47F3EF005C2405 /* ConfigWindowUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5E42B47F3EF005C2405 /* ConfigWindowUI.swift */; };
+		05BEF5E72B47FC46005C2405 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5E62B47FC46005C2405 /* MainVC.swift */; };
+		05BEF5E92B47FC85005C2405 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5E82B47FC85005C2405 /* SecondVC.swift */; };
+		05BEF5EB2B47FC99005C2405 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5EA2B47FC99005C2405 /* ThirdVC.swift */; };
 		C478FD6B38134C7F87066A64 /* Pods_iosDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA96560ADA4501121330BB8 /* Pods_iosDev.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +29,6 @@
 		05BEF5BB2B47DB08005C2405 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		05BEF5BD2B47DB08005C2405 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		05BEF5BE2B47DB08005C2405 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		05BEF5C02B47DB08005C2405 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		05BEF5C12B47DB08005C2405 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		05BEF5C42B47DB08005C2405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05BEF5C62B47DB0B005C2405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05BEF5C92B47DB0B005C2405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,11 @@
 		05BEF5DA2B47E83F005C2405 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		05BEF5DB2B47EC13005C2405 /* PrefixHeaderSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHeaderSwift.swift; sourceTree = "<group>"; };
 		05BEF5DD2B47ED1B005C2405 /* YSGlobal.h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSGlobal.h.h; sourceTree = "<group>"; };
+		05BEF5DF2B47EFA4005C2405 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		05BEF5E42B47F3EF005C2405 /* ConfigWindowUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigWindowUI.swift; sourceTree = "<group>"; };
+		05BEF5E62B47FC46005C2405 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		05BEF5E82B47FC85005C2405 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		05BEF5EA2B47FC99005C2405 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		4CA96560ADA4501121330BB8 /* Pods_iosDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5382D341535CA95946539F1E /* Pods-iosDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDev.release.xcconfig"; path = "Target Support Files/Pods-iosDev/Pods-iosDev.release.xcconfig"; sourceTree = "<group>"; };
 		73E7B948D028A0964F45FFE4 /* Pods-iosDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDev.debug.xcconfig"; path = "Target Support Files/Pods-iosDev/Pods-iosDev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,8 +88,10 @@
 				05BEF5BB2B47DB08005C2405 /* AppDelegate.m */,
 				05BEF5BD2B47DB08005C2405 /* SceneDelegate.h */,
 				05BEF5BE2B47DB08005C2405 /* SceneDelegate.m */,
-				05BEF5C02B47DB08005C2405 /* ViewController.h */,
-				05BEF5C12B47DB08005C2405 /* ViewController.m */,
+				05BEF5E42B47F3EF005C2405 /* ConfigWindowUI.swift */,
+				05BEF5E62B47FC46005C2405 /* MainVC.swift */,
+				05BEF5E82B47FC85005C2405 /* SecondVC.swift */,
+				05BEF5EA2B47FC99005C2405 /* ThirdVC.swift */,
 				05BEF5C32B47DB08005C2405 /* Main.storyboard */,
 				05BEF5C62B47DB0B005C2405 /* Assets.xcassets */,
 				05BEF5C82B47DB0B005C2405 /* LaunchScreen.storyboard */,
@@ -122,9 +131,18 @@
 		05BEF5D62B47E787005C2405 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				05BEF5DE2B47EF73005C2405 /* base */,
 				05BEF5D82B47E7C9005C2405 /* GlobalDefine.swift */,
 			);
 			path = swift;
+			sourceTree = "<group>";
+		};
+		05BEF5DE2B47EF73005C2405 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				05BEF5DF2B47EFA4005C2405 /* BaseNavigationController.swift */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 		B20B973F28568AD1137CC624 /* Pods */ = {
@@ -259,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BEF5E52B47F3EF005C2405 /* ConfigWindowUI.swift in Sources */,
 				05BEF5DC2B47EC13005C2405 /* PrefixHeaderSwift.swift in Sources */,
-				05BEF5C22B47DB08005C2405 /* ViewController.m in Sources */,
+				05BEF5E02B47EFA4005C2405 /* BaseNavigationController.swift in Sources */,
+				05BEF5E72B47FC46005C2405 /* MainVC.swift in Sources */,
+				05BEF5EB2B47FC99005C2405 /* ThirdVC.swift in Sources */,
+				05BEF5E92B47FC85005C2405 /* SecondVC.swift in Sources */,
 				05BEF5BC2B47DB08005C2405 /* AppDelegate.m in Sources */,
 				05BEF5D92B47E7C9005C2405 /* GlobalDefine.swift in Sources */,
 				05BEF5CD2B47DB0B005C2405 /* main.m in Sources */,
