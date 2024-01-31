@@ -20,6 +20,7 @@
 		05BEF5E72B47FC46005C2405 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5E62B47FC46005C2405 /* MainVC.swift */; };
 		05BEF5E92B47FC85005C2405 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5E82B47FC85005C2405 /* SecondVC.swift */; };
 		05BEF5EB2B47FC99005C2405 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5EA2B47FC99005C2405 /* ThirdVC.swift */; };
+		05D386D92B68EC4200A4FC27 /* testBitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D386D82B68EC4200A4FC27 /* testBitVC.swift */; };
 		C478FD6B38134C7F87066A64 /* Pods_iosDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA96560ADA4501121330BB8 /* Pods_iosDev.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		05BEF5E62B47FC46005C2405 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		05BEF5E82B47FC85005C2405 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		05BEF5EA2B47FC99005C2405 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		05D386D82B68EC4200A4FC27 /* testBitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testBitVC.swift; sourceTree = "<group>"; };
 		4CA96560ADA4501121330BB8 /* Pods_iosDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5382D341535CA95946539F1E /* Pods-iosDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDev.release.xcconfig"; path = "Target Support Files/Pods-iosDev/Pods-iosDev.release.xcconfig"; sourceTree = "<group>"; };
 		73E7B948D028A0964F45FFE4 /* Pods-iosDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDev.debug.xcconfig"; path = "Target Support Files/Pods-iosDev/Pods-iosDev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		05BEF5D42B47DFF4005C2405 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				05D386D82B68EC4200A4FC27 /* testBitVC.swift */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				05BEF5EB2B47FC99005C2405 /* ThirdVC.swift in Sources */,
 				05BEF5E92B47FC85005C2405 /* SecondVC.swift in Sources */,
 				05BEF5BC2B47DB08005C2405 /* AppDelegate.m in Sources */,
+				05D386D92B68EC4200A4FC27 /* testBitVC.swift in Sources */,
 				05BEF5D92B47E7C9005C2405 /* GlobalDefine.swift in Sources */,
 				05BEF5CD2B47DB0B005C2405 /* main.m in Sources */,
 				05BEF5BF2B47DB08005C2405 /* SceneDelegate.m in Sources */,
