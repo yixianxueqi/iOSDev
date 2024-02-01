@@ -54,6 +54,10 @@ class SecondVC: UIViewController {
             let simpleOperationVC = testSimpleOperationVC()
             self?.navigationController?.pushViewController(simpleOperationVC, animated: true)
         }))
+        dataList.append(("smartTimer", {[weak self] in
+            let timerVC = testTimerVC()
+            self?.navigationController?.pushViewController(timerVC, animated: true)
+        }))
     }
 }
 
