@@ -24,7 +24,7 @@ import UIKit
         let bar = nav.navigationBar
         let color = UIColor(hex: "#4598F0")
         let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
-                              NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18.0)]
+                              NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16.0)]
         let navBarAppear = bar.standardAppearance
         navBarAppear.backgroundColor = color
         navBarAppear.titleTextAttributes = textAttributes
@@ -42,11 +42,11 @@ import UIKit
         let normalColor = UIColor(hex: "#D1D1D1")
         appearance.backgroundColor = UIColor(hex: "#FFFFFF")
         appearance.stackedLayoutAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: normalColor,
-                                                                         NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17.0)]
+                                                                         NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15.0)]
         appearance.stackedLayoutAppearance.normal.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: 8.0)
         appearance.stackedLayoutAppearance.normal.iconColor = normalColor
         appearance.stackedLayoutAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: mainColor,
-                                                                           NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17.0)]
+                                                                           NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15.0)]
         appearance.stackedLayoutAppearance.selected.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: 8.0)
         appearance.stackedLayoutAppearance.selected.iconColor = mainColor
         if #available(iOS 15.0, *) {

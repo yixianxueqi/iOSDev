@@ -1,12 +1,12 @@
 //
-//  YSGlobal.h.h
+//  HHGlobal.h.h
 //  iosDev
 //
 //  Created by kingdee on 2024/1/5.
 //
 
-#ifndef YSGlobal_h_h
-#define YSGlobal_h_h
+#ifndef HHGlobal_h_h
+#define HHGlobal_h_h
 
 // 强弱引用
 #define WEAKSELF __weak typeof(self) weakSelf = self;
@@ -20,4 +20,4 @@
 #endif
 
 
-#endif /* YSGlobal_h_h */
+#endif /* HHGlobal_h_h */

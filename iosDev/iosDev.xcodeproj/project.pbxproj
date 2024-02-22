@@ -27,6 +27,7 @@
 		05D386E42B6B798C00A4FC27 /* testTimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D386E32B6B798C00A4FC27 /* testTimerVC.swift */; };
 		05DA33332B8605DB00F3DE8F /* testGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DA33322B8605DB00F3DE8F /* testGestureVC.swift */; };
 		05DA33362B86063C00F3DE8F /* SimpleGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DA33352B86063C00F3DE8F /* SimpleGestureView.swift */; };
+		05DA33392B86E40700F3DE8F /* HHSystemTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA33382B86E40700F3DE8F /* HHSystemTools.m */; };
 		C478FD6B38134C7F87066A64 /* Pods_iosDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA96560ADA4501121330BB8 /* Pods_iosDev.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +46,7 @@
 		05BEF5D82B47E7C9005C2405 /* GlobalDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
 		05BEF5DA2B47E83F005C2405 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		05BEF5DB2B47EC13005C2405 /* PrefixHeaderSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHeaderSwift.swift; sourceTree = "<group>"; };
-		05BEF5DD2B47ED1B005C2405 /* YSGlobal.h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSGlobal.h.h; sourceTree = "<group>"; };
+		05BEF5DD2B47ED1B005C2405 /* HHGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHGlobal.h; sourceTree = "<group>"; };
 		05BEF5DF2B47EFA4005C2405 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		05BEF5E42B47F3EF005C2405 /* ConfigWindowUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigWindowUI.swift; sourceTree = "<group>"; };
 		05BEF5E62B47FC46005C2405 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -58,6 +59,8 @@
 		05D386E32B6B798C00A4FC27 /* testTimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTimerVC.swift; sourceTree = "<group>"; };
 		05DA33322B8605DB00F3DE8F /* testGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testGestureVC.swift; sourceTree = "<group>"; };
 		05DA33352B86063C00F3DE8F /* SimpleGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGestureView.swift; sourceTree = "<group>"; };
+		05DA33372B86E40700F3DE8F /* HHSystemTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHSystemTools.h; sourceTree = "<group>"; };
+		05DA33382B86E40700F3DE8F /* HHSystemTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHSystemTools.m; sourceTree = "<group>"; };
 		4CA96560ADA4501121330BB8 /* Pods_iosDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5382D341535CA95946539F1E /* Pods-iosDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDev.release.xcconfig"; path = "Target Support Files/Pods-iosDev/Pods-iosDev.release.xcconfig"; sourceTree = "<group>"; };
 		73E7B948D028A0964F45FFE4 /* Pods-iosDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDev.debug.xcconfig"; path = "Target Support Files/Pods-iosDev/Pods-iosDev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,7 +144,8 @@
 		05BEF5D52B47E780005C2405 /* oc */ = {
 			isa = PBXGroup;
 			children = (
-				05BEF5DD2B47ED1B005C2405 /* YSGlobal.h.h */,
+				05BEF5DD2B47ED1B005C2405 /* HHGlobal.h */,
+				05DA333A2B86E40F00F3DE8F /* tools */,
 			);
 			path = oc;
 			sourceTree = "<group>";
@@ -196,6 +200,15 @@
 				05DA33352B86063C00F3DE8F /* SimpleGestureView.swift */,
 			);
 			path = gesture;
+			sourceTree = "<group>";
+		};
+		05DA333A2B86E40F00F3DE8F /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				05DA33372B86E40700F3DE8F /* HHSystemTools.h */,
+				05DA33382B86E40700F3DE8F /* HHSystemTools.m */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 		B20B973F28568AD1137CC624 /* Pods */ = {
@@ -342,6 +355,7 @@
 				05D386DF2B6B6F7300A4FC27 /* testSimpleOperationVC.swift in Sources */,
 				05BEF5E92B47FC85005C2405 /* SecondVC.swift in Sources */,
 				05BEF5BC2B47DB08005C2405 /* AppDelegate.m in Sources */,
+				05DA33392B86E40700F3DE8F /* HHSystemTools.m in Sources */,
 				05D386E22B6B790C00A4FC27 /* HHTimerManager.swift in Sources */,
 				05D386D92B68EC4200A4FC27 /* testBitVC.swift in Sources */,
 				05BEF5D92B47E7C9005C2405 /* GlobalDefine.swift in Sources */,
