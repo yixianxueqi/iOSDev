@@ -58,9 +58,9 @@ import UIKit
     
     fileprivate class func configTabbarChildVC(_ tabbar: UITabBarController) {
         let items: [(vc: UIViewController, title: String, normalImg: String, selectImg: String)] = [
-            (MainVC(), "首页", "tray", "tray.fill"),
-            (SecondVC(), "页二", "folder", "folder.fill"),
-            (ThirdVC(), "页三", "paperplane", "paperplane.fill")]
+            (MainVC(), "UI", "tray", "tray.fill"),
+            (SecondVC(), "Tool", "folder", "folder.fill"),
+            (ThirdVC(), "Other", "paperplane", "paperplane.fill")]
         var vcList: [UIViewController] = []
         items.forEach { item in
             let barItem = UITabBarItem(title: item.title, image:UIImage(systemName: item.normalImg), selectedImage: UIImage(systemName: item.selectImg))

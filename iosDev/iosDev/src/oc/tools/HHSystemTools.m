@@ -33,7 +33,7 @@ int anti_debug(void) {
 
 @implementation HHSystemTools
 
-+ (void)forbiddenReleaseDebug {
++ (void)forbiddenReleaseTypeDebugMode {
     
 #ifndef DEBUG
     anti_debug();

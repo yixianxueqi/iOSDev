@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050943F82B91AF5B00BF5F79 /* HHLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050943F72B91AF5B00BF5F79 /* HHLinkedList.swift */; };
+		050943FB2B91B01300BF5F79 /* testAlgorithmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050943FA2B91B01300BF5F79 /* testAlgorithmVC.swift */; };
 		05BEF5BC2B47DB08005C2405 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5BB2B47DB08005C2405 /* AppDelegate.m */; };
 		05BEF5BF2B47DB08005C2405 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5BE2B47DB08005C2405 /* SceneDelegate.m */; };
 		05BEF5C52B47DB08005C2405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BEF5C32B47DB08005C2405 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050943F72B91AF5B00BF5F79 /* HHLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHLinkedList.swift; sourceTree = "<group>"; };
+		050943FA2B91B01300BF5F79 /* testAlgorithmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAlgorithmVC.swift; sourceTree = "<group>"; };
 		05BEF5B72B47DB08005C2405 /* iosDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BEF5BA2B47DB08005C2405 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05BEF5BB2B47DB08005C2405 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +82,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050943F42B91AEFD00BF5F79 /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				050943F62B91AF3700BF5F79 /* tree */,
+				050943F52B91AF2A00BF5F79 /* linkedlist */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
+		050943F52B91AF2A00BF5F79 /* linkedlist */ = {
+			isa = PBXGroup;
+			children = (
+				050943F72B91AF5B00BF5F79 /* HHLinkedList.swift */,
+			);
+			path = linkedlist;
+			sourceTree = "<group>";
+		};
+		050943F62B91AF3700BF5F79 /* tree */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tree;
+			sourceTree = "<group>";
+		};
+		050943F92B91AFFB00BF5F79 /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				050943FA2B91B01300BF5F79 /* testAlgorithmVC.swift */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
 		05BEF5AE2B47DB08005C2405 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +169,7 @@
 		05BEF5D42B47DFF4005C2405 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				050943F92B91AFFB00BF5F79 /* algorithm */,
 				05D386DD2B6B6F3F00A4FC27 /* multiThread */,
 				05D386D82B68EC4200A4FC27 /* testBitVC.swift */,
 				05D386E32B6B798C00A4FC27 /* testTimerVC.swift */,
@@ -153,6 +190,7 @@
 		05BEF5D62B47E787005C2405 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				050943F42B91AEFD00BF5F79 /* algorithm */,
 				05D386E02B6B78F600A4FC27 /* timer */,
 				05D386DA2B6A260C00A4FC27 /* operation */,
 				05BEF5DE2B47EF73005C2405 /* base */,
@@ -343,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050943FB2B91B01300BF5F79 /* testAlgorithmVC.swift in Sources */,
 				05BEF5E52B47F3EF005C2405 /* ConfigWindowUI.swift in Sources */,
 				05D386DC2B6A264200A4FC27 /* HHSimpleOperation.swift in Sources */,
 				05BEF5DC2B47EC13005C2405 /* PrefixHeaderSwift.swift in Sources */,
@@ -356,6 +395,7 @@
 				05BEF5E92B47FC85005C2405 /* SecondVC.swift in Sources */,
 				05BEF5BC2B47DB08005C2405 /* AppDelegate.m in Sources */,
 				05DA33392B86E40700F3DE8F /* HHSystemTools.m in Sources */,
+				050943F82B91AF5B00BF5F79 /* HHLinkedList.swift in Sources */,
 				05D386E22B6B790C00A4FC27 /* HHTimerManager.swift in Sources */,
 				05D386D92B68EC4200A4FC27 /* testBitVC.swift in Sources */,
 				05BEF5D92B47E7C9005C2405 /* GlobalDefine.swift in Sources */,

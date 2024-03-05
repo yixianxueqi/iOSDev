@@ -53,6 +53,11 @@ class ThirdVC: UIViewController {
             let bitVC = testBitVC()
             self?.navigationController?.pushViewController(bitVC, animated: true)
         }))
+        dataList.append(("algorithm", {[weak self] in
+            let vc = testAlgorithmVC()
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }))
+        
     }
 }
 
