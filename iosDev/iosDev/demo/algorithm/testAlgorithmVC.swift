@@ -27,7 +27,9 @@ class testAlgorithmVC: UIViewController {
 //        testReverseLinkList()
 //        testMiddleLinkList()
 //        mergeTwoSortedLinkList()
-        reverseRangeLinkList()
+//        reverseRangeLinkList()
+//        findLinkListHasCycle()
+//        findLinkListCycleFirstNode()
         
         // 排序
 //        maopaoSort()
@@ -237,12 +239,80 @@ extension testAlgorithmVC {
     
     // 检测是否有环
     fileprivate func findLinkListHasCycle() {
+        let head = constructLinkList(with: [1, 2, 3, 4, 5, 6, 7, 8, 9])
+        let length = 9
+        // 制造环
+        var tail: SingleLinkListNode? = head
+        var cycleNode: SingleLinkListNode?
+        let cycleIndex = 4
+        for i in 0..<length - 1 {
+            if i == cycleIndex {
+                cycleNode = tail
+            }
+            tail = tail?.next
+        }
+        tail?.next = cycleNode
+        //        debugPrint("\(tail)")
+        
+        // 处理
+        var slow: SingleLinkListNode? = head
+        var fast: SingleLinkListNode? = head
+        var flag = false
+        while fast != nil && fast?.next != nil {
+            slow = slow?.next
+            fast = fast?.next?.next
+            if fast == slow || fast?.next == slow {
+                flag = true
+                break
+            }
+        }
+        debugPrint(flag ? "有环" : "无环")
         
     }
     
     // 找出环的第一个节点
     fileprivate func findLinkListCycleFirstNode() {
         
+        let head = constructLinkList(with: [1, 2, 3, 4, 5, 6, 7, 8, 9])
+        let length = 9
+        // 制造环
+        var tail: SingleLinkListNode? = head
+        var cycleNode: SingleLinkListNode?
+        let cycleIndex = 4
+        for i in 0..<length - 1 {
+            if i == cycleIndex {
+                cycleNode = tail
+            }
+            tail = tail?.next
+        }
+        tail?.next = cycleNode
+        //        debugPrint("\(tail)")
+        
+        // 处理
+        var slow: SingleLinkListNode? = head
+        var fast: SingleLinkListNode? = head
+        var flag = false
+        while fast != nil && fast?.next != nil {
+            slow = slow?.next
+            fast = fast?.next?.next
+            if fast == slow {
+                flag = true
+                break
+            }
+        }
+        debugPrint(flag ? "有环" : "无环")
+        // 找出入环点
+        fast = head;
+        var entryCycleNode: SingleLinkListNode?
+        while(slow != nil) {
+            if slow == fast {
+                entryCycleNode = slow
+                break
+            }
+            slow = slow?.next;
+            fast = fast?.next;
+        }
+        debugPrint("\(entryCycleNode?.value)")
     }
 }
 

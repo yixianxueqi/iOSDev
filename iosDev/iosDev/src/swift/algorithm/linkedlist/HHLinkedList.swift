@@ -25,6 +25,13 @@ class SingleLinkListNode {
     }
 }
 
+extension SingleLinkListNode: Equatable {
+    
+    static func == (lhs: SingleLinkListNode, rhs: SingleLinkListNode) -> Bool {
+        return lhs.value == rhs.value
+    }
+}
+
 // 双向链表
 class DoubleLinkListNode {
     
