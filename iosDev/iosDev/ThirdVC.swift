@@ -48,14 +48,22 @@ class ThirdVC: UIViewController {
         }
     }
     
+    fileprivate func pushVC(_ vc: UIViewController) {
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     fileprivate func setupData() {
         dataList.append(("bits", {[weak self] in
             let bitVC = testBitVC()
-            self?.navigationController?.pushViewController(bitVC, animated: true)
+            self?.pushVC(bitVC)
         }))
         dataList.append(("algorithm", {[weak self] in
             let vc = testAlgorithmVC()
-            self?.navigationController?.pushViewController(vc, animated: true)
+            self?.pushVC(vc)
+        }))
+        dataList.append(("grammar", {[weak self] in
+            let vc = testGrammarVC()
+            self?.pushVC(vc)
         }))
         
     }

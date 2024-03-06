@@ -9,8 +9,6 @@ import Foundation
 
 class testAlgorithmVC: UIViewController {
     
-    var bits = BitsModel()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
