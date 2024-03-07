@@ -8,8 +8,6 @@
 
 import Foundation
 
-let timeInterval = 1.0
-let tolerance = 0.0
 /*
  智能定时器：
  当有人订阅定时器时工作，当无人订阅时挂起；
@@ -18,9 +16,12 @@ let tolerance = 0.0
 public class HHTimerManager: NSObject {
     
     public typealias timeCallFunc = () -> Void
+    // 间隔, 毫秒单位
+    public var timeInterval: Int = 1000
     
     class HHTimerObserver {
         weak var observer: AnyObject?
+        // 间隔, 秒
         var interval: TimeInterval
         var intervalCount: TimeInterval
         var callBackFunc: timeCallFunc
@@ -34,62 +35,65 @@ public class HHTimerManager: NSObject {
         }
     }
     
-    fileprivate lazy var timer: Timer = {
-        let timer = Timer(timeInterval: timeInterval, repeats: true) {[weak self] _ in
+    fileprivate lazy var timerSource: DispatchSourceTimer = {
+        let queue = DispatchQueue(label: "dispatchTimerQueue")
+        let timer = DispatchSource.makeTimerSource(queue: queue)
+        timer.schedule(deadline: .now(), repeating: .milliseconds(timeInterval))
+        timer.setEventHandler(handler: {[weak self] in
             guard let `self` = self else { return }
             self.timerRepeatCall()
-        }
-        timer.tolerance = tolerance
-        RunLoop.main.add(timer, forMode: RunLoop.Mode.common)
+        })
+        self.wakeupTimer()
         return timer
     }()
+    
+    fileprivate let lock: NSLock = NSLock()
     fileprivate lazy var observerList: [HHTimerObserver] = []
     var timerIsRunning: Bool = false
     
     deinit {
+        stopTimer()
         debugPrint("HHTimerManager deinit")
     }
     
     fileprivate func checkExistObserver() {
-        synchronized(self) {
-            observerList.removeAll { timerObserver -> Bool in
-                guard let _ = timerObserver.observer else {
-                    return true
-                }
-                return false
+        observerList.removeAll { timerObserver -> Bool in
+            guard let _ = timerObserver.observer else {
+                return true
             }
-            observerList.count > 0 ? wakeupTimer() : suspendTimer()
+            return false
         }
+        observerList.count > 0 ? wakeupTimer() : suspendTimer()
     }
     
     fileprivate func timerRepeatCall() {
-        synchronized(self) {
-            observerList.forEach { timerObserver in
-                if let _ = timerObserver.observer {
-                    timerObserver.intervalCount += timeInterval
-                    if timerObserver.intervalCount >= timerObserver.interval {
-                        timerObserver.intervalCount = 0.0
-                        if let queue = timerObserver.callInQueue {
-                            queue.async {
-                                if let _ = timerObserver.observer {
-                                    timerObserver.callBackFunc()
-                                }
+        self.lock.lock()
+        let interval = TimeInterval(timeInterval)/1000.0
+        observerList.forEach { timerObserver in
+            if let _ = timerObserver.observer {
+                timerObserver.intervalCount += interval
+                if timerObserver.intervalCount >= timerObserver.interval {
+                    timerObserver.intervalCount = 0.0
+                    if let queue = timerObserver.callInQueue {
+                        queue.async {
+                            if let _ = timerObserver.observer {
+                                timerObserver.callBackFunc()
                             }
-                        } else {
-                            timerObserver.callBackFunc()
                         }
+                    } else {
+                        timerObserver.callBackFunc()
                     }
                 }
             }
-            checkExistObserver()
         }
+        checkExistObserver()
+        self.lock.unlock()
     }
     
     fileprivate func wakeupTimer() {
         if timerIsRunning { return }
         timerIsRunning = true
-//        timer.fireDate = Date.distantPast
-        timer.fireDate = Date.init(timeInterval: timeInterval, since: Date())
+        timerSource.resume()
 //        debugPrint("wakeupTimer...")
     }
     
@@ -98,13 +102,15 @@ public class HHTimerManager: NSObject {
             return
         }
         timerIsRunning = false
-        timer.fireDate = Date.distantFuture
+        timerSource.suspend()
 //        debugPrint("suspendTimer...")
     }
     
     fileprivate func stopTimer() {
-        timerIsRunning = false
-        timer.invalidate()
+        if !timerIsRunning {
+            timerSource.resume()
+        }
+        timerSource.cancel()
     }
 }
 
@@ -112,26 +118,24 @@ extension HHTimerManager {
     
     public func addTimerObserver(_ observer: AnyObject, interval: TimeInterval, inQueue: DispatchQueue = DispatchQueue.main, callBack: @escaping timeCallFunc) {
         
-        synchronized(self) {
-            let timeObserver = HHTimerObserver(observer: observer, interval: interval, callBack: callBack)
-            if inQueue != DispatchQueue.main {
-                timeObserver.callInQueue = inQueue
-            }
-            observerList.append(timeObserver)
-        }
+        self.lock.lock()
+        let timeObserver = HHTimerObserver(observer: observer, interval: interval, callBack: callBack)
+        timeObserver.callInQueue = inQueue
+        observerList.append(timeObserver)
         checkExistObserver()
+        self.lock.unlock()
     }
     
     public func removeTimerObserver(_ observer: AnyObject) {
         
-        synchronized(self) {
-            observerList.removeAll { timeObserver -> Bool in
-                if let obs = timeObserver.observer, obs === observer {
-                    return true
-                }
-                return false
+        self.lock.lock()
+        observerList.removeAll { timeObserver -> Bool in
+            if let obs = timeObserver.observer, obs === observer {
+                return true
             }
+            return false
         }
         checkExistObserver()
+        self.lock.unlock()
     }
 }

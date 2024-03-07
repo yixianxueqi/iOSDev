@@ -54,6 +54,7 @@ class testTimerVC: UIViewController {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 10) {[weak self] in
                         guard let `self` = self else { return }
                         self.obj2 = nil
+                        self.smartTimer.removeTimerObserver(self)
                     }
                 }
             }
