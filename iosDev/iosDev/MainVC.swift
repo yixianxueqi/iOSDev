@@ -7,6 +7,7 @@
 
 import UIKit
 
+// 主要是UI相关的测试验证
 class MainVC: UIViewController {
     
     lazy var table: UITableView = {

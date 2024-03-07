@@ -13,6 +13,7 @@
 		050944012B973C1700BF5F79 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050944002B973C1700BF5F79 /* CommonModel.swift */; };
 		050944042B984CB400BF5F79 /* HHCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 050944032B984CB400BF5F79 /* HHCommonModel.m */; };
 		050944072B98581C00BF5F79 /* testOCGrammarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 050944062B98581C00BF5F79 /* testOCGrammarVC.m */; };
+		050944092B98851900BF5F79 /* HHBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050944082B98851900BF5F79 /* HHBinaryTree.swift */; };
 		05BEF5BC2B47DB08005C2405 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5BB2B47DB08005C2405 /* AppDelegate.m */; };
 		05BEF5BF2B47DB08005C2405 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5BE2B47DB08005C2405 /* SceneDelegate.m */; };
 		05BEF5C52B47DB08005C2405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BEF5C32B47DB08005C2405 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		050944032B984CB400BF5F79 /* HHCommonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHCommonModel.m; sourceTree = "<group>"; };
 		050944052B98581C00BF5F79 /* testOCGrammarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testOCGrammarVC.h; sourceTree = "<group>"; };
 		050944062B98581C00BF5F79 /* testOCGrammarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testOCGrammarVC.m; sourceTree = "<group>"; };
+		050944082B98851900BF5F79 /* HHBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBinaryTree.swift; sourceTree = "<group>"; };
 		05BEF5B72B47DB08005C2405 /* iosDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BEF5BA2B47DB08005C2405 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05BEF5BB2B47DB08005C2405 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		050943F62B91AF3700BF5F79 /* tree */ = {
 			isa = PBXGroup;
 			children = (
+				050944082B98851900BF5F79 /* HHBinaryTree.swift */,
 			);
 			path = tree;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				05BEF5EB2B47FC99005C2405 /* ThirdVC.swift in Sources */,
 				050944012B973C1700BF5F79 /* CommonModel.swift in Sources */,
 				05DA33332B8605DB00F3DE8F /* testGestureVC.swift in Sources */,
+				050944092B98851900BF5F79 /* HHBinaryTree.swift in Sources */,
 				05D386E42B6B798C00A4FC27 /* testTimerVC.swift in Sources */,
 				05D386DF2B6B6F7300A4FC27 /* testSimpleOperationVC.swift in Sources */,
 				05BEF5E92B47FC85005C2405 /* SecondVC.swift in Sources */,

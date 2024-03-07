@@ -32,6 +32,10 @@ class testAlgorithmVC: UIViewController {
         // 排序
 //        maopaoSort()
 //        selectSort()
+        
+        // 二叉树
+        let head = constructBinarytree()
+        previewTree(head)
     }
     
     fileprivate func setupView() {
@@ -314,7 +318,37 @@ extension testAlgorithmVC {
     }
 }
 
-// 树
+// 二叉树
 extension testAlgorithmVC {
+        
+    fileprivate func constructBinarytree() -> BinaryTree? {
+        /*
+         1
+         2 3
+         4 5 6 7
+         */
+        var head: BinaryTree? = BinaryTree(value: 1)
+        let left1 = BinaryTree(value: 2)
+        let right1 = BinaryTree(value: 3)
+        head?.letf = left1
+        head?.right = right1
+        let left2 = BinaryTree(value:4)
+        let right2 = BinaryTree(value: 5)
+        left1.letf = left2
+        left1.right = right2
+        let left3 = BinaryTree(value: 6)
+        let right3 = BinaryTree(value: 7)
+        right1.letf = left3
+        right1.right = right3
+        return head
+    }
+    
+    fileprivate func previewTree(_ head: BinaryTree?) {
+        BinaryTree.pre(head: head)
+        debugPrint("------")
+        BinaryTree.mid(head: head)
+        debugPrint("------")
+        BinaryTree.post(head: head)
+    }
     
 }

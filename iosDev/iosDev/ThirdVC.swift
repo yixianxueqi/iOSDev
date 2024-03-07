@@ -7,6 +7,7 @@
 
 import UIKit
 
+// 主要是技巧、语法、数据结构算法等测试验证
 class ThirdVC: UIViewController {
     
     lazy var table: UITableView = {
