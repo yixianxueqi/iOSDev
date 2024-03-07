@@ -34,8 +34,11 @@ class testAlgorithmVC: UIViewController {
 //        selectSort()
         
         // 二叉树
-        let head = constructBinarytree()
-        previewTree(head)
+//        let head = constructBinarytree()
+//        previewTree(head)
+        
+        // LeetCode
+        LCGoldenAlgorithm.show()
     }
     
     fileprivate func setupView() {
