@@ -32,6 +32,9 @@ class Student: Person {
     }
 }
 
+@objc(HHTeacher)
+@objcMembers class Teacher: Person {}
+
 
 class Animal {
     

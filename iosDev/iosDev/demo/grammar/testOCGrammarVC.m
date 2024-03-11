@@ -30,6 +30,7 @@
     [self testSuper];
     [self testKindAndMember];
     [self testKeywordOBJC];
+    [self testNameSpace];
 }
 
 
@@ -75,6 +76,34 @@
     Student *stu = [[Student alloc] init];
     [stu run];
     
+}
+
+- (void)testNameSpace {
+    /*
+     oc与swift混编：命名空间的问题；
+     swift 访问 oc 没问题；
+     oc 访问 swift 存在命名空间问题；
+        1. 添加命名空间，nameSpace.clss
+        2. 重命名 Teacher -> @objc(HHTeacher) -> HHTeacher, @objc前提条件，需继承自NSObject
+     
+     swift访问swift存在命名空间问题：
+        1. 添加命名空间, 例：Alamofire.RetryPolicy
+        2. 重命名 Teacher -> @objc(HHTeacher) -> HHTeacher, @objc前提条件，需继承自NSObject
+     */
+//    Class cls = NSClassFromString(@"Person"); // nil
+    NSString *nameSpace = [NSBundle mainBundle].infoDictionary[@"CFBundleName"];
+    NSString *clsStr = [[NSString alloc] initWithFormat:@"%@.Person", nameSpace];
+    Class cls = NSClassFromString(clsStr); // Person class
+    NSLog(@"person class: %d", [[[Person alloc] init] isKindOfClass:cls]);
+    
+    Class cls2 = NSClassFromString(@"HHTeacher");
+    NSLog(@"HHTeacher class: %d", [[[HHTeacher alloc] init] isKindOfClass:cls2]);
+    
+    
+//    let cls = NSClassFromString("MASViewAttribute")
+//    debugPrint("cls: \(cls)")
+//    let cls2 = NSClassFromString("Alamofire.RetryPolicy")
+//    debugPrint("cls2: \(cls2), \(RetryPolicy.self)")
 }
 
 @end
