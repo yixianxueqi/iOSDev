@@ -32,13 +32,14 @@ class testAlgorithmVC: UIViewController {
         // 排序
 //        maopaoSort()
 //        selectSort()
+        quickSort()
         
         // 二叉树
 //        let head = constructBinarytree()
 //        previewTree(head)
         
         // LeetCode
-        LCGoldenAlgorithm.show()
+//        LCGoldenAlgorithm.show()
     }
     
     fileprivate func setupView() {
@@ -88,6 +89,34 @@ extension testAlgorithmVC {
             }
         }
         debugPrint("\(list)")
+    }
+    
+    // 快速排序
+    fileprivate func quickSort() {
+        var list = [23, 35, 15, 20, 9, 5, 45, 56, 11, 2]
+        func realSort(_ ls: inout [Int], left: Int, right: Int) {
+            if left + 1 >= right {
+                return
+            }
+            var first = left
+            var last = right
+            let key = ls[first]
+            while first < last {
+                while (first < last && ls[last] >= key) {
+                    last -= 1
+                }
+                ls[first] = ls[last]
+                while (first < last && ls[first] < key) {
+                    first += 1
+                }
+                ls[last] = ls[first]
+            }
+            ls[first] = key
+            realSort(&ls, left: left, right: first)
+            realSort(&ls, left: first+1, right: right)
+        }
+        realSort(&list, left: 0, right: list.count - 1)
+        debugPrint(list)
     }
 }
 
