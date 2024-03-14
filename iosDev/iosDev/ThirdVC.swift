@@ -66,6 +66,14 @@ class ThirdVC: UIViewController {
             let vc = testGrammarVC()
             self?.pushVC(vc)
         }))
+        dataList.append(("queue", {[weak self] in
+            let vc = testQueueVC()
+            self?.pushVC(vc)
+        }))
+        dataList.append(("block", {[weak self] in
+            let vc = testBlockVC()
+            self?.pushVC(vc)
+        }))
         
     }
 }
