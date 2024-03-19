@@ -32,14 +32,14 @@ class testAlgorithmVC: UIViewController {
         // 排序
 //        maopaoSort()
 //        selectSort()
-        quickSort()
+//        quickSort()
         
         // 二叉树
 //        let head = constructBinarytree()
 //        previewTree(head)
         
         // LeetCode
-//        LCGoldenAlgorithm.show()
+        LCGoldenAlgorithm.show()
     }
     
     fileprivate func setupView() {

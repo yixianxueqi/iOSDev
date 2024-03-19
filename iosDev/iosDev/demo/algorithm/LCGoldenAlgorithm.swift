@@ -320,6 +320,51 @@ extension Solution {
      如果不得使用临时缓冲区，该怎么解决？
      */
     func removeDuplicateNodes(_ head: ListNode?) -> ListNode? {
-        return nil
+        if head == nil || head?.next == nil {
+            return head
+        }
+        var temp = head
+        var map: [Int: Bool] = [temp!.val: true]
+        
+        while temp?.next != nil {
+            if let _ = map[temp!.next!.val] {
+                temp?.next = temp?.next?.next
+            }else{
+                map[temp!.next!.val] = true
+                temp = temp?.next
+            }
+        }
+        return head
+    }
+}
+
+extension Solution {
+    /*
+     02.02
+     返回倒数第 k 个节点
+     
+     实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。
+
+     注意：本题相对原题稍作改动
+
+     示例：
+
+     输入： 1->2->3->4->5 和 k = 2
+     输出： 4
+     说明：
+
+     给定的 k 保证是有效的。
+     */
+    func kthToLast(_ head: ListNode?, _ k: Int) -> Int {
+        var pFront = head
+        var pEnd = head
+        for _ in 0..<k {
+            pEnd = pEnd?.next
+        }
+        while pEnd != nil {
+            pFront = pFront?.next
+            pEnd = pEnd?.next
+        }
+        return pFront?.val ?? 0
     }
 }
