@@ -9,9 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HHFood : NSObject
-
-
+@interface HHFood : NSObject <NSCopying, NSMutableCopying>
+@property (nonatomic, strong) NSString *name;
 
 @end
 

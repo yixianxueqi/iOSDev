@@ -31,6 +31,7 @@
     [self testKindAndMember];
     [self testKeywordOBJC];
     [self testNameSpace];
+    [self testCopy];
 }
 
 
@@ -104,6 +105,29 @@
 //    debugPrint("cls: \(cls)")
 //    let cls2 = NSClassFromString("Alamofire.RetryPolicy")
 //    debugPrint("cls2: \(cls2), \(RetryPolicy.self)")
+}
+
+- (void)testCopy {
+    
+    /*
+     1. NSObject内有方法：
+     - (id)copy;
+     - (id)mutableCopy;
+     但是未实现，自定义子类直接使用会崩溃。
+     -[HHFood copyWithZone:]: unrecognized selector sent to instance
+     
+     2. 需子类实现协议 <NSCopying, NSMutableCopying>
+     本质是实现方法：
+     - (id)copyWithZone:(NSZone *)zone
+     - (id)mutableCopyWithZone:(NSZone *)zone
+     */
+    HHFood *food = [[HHFood alloc] init];
+    food.name = @"food";
+    NSLog(@"ori: %@", food);
+    HHFood *foodc = [food copy];
+    NSLog(@"copy: %@", foodc);
+    HHFood *foodmc = [food mutableCopy];
+    NSLog(@"mutableCopy: %@", foodmc);
 }
 
 @end

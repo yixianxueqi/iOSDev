@@ -9,6 +9,17 @@
 
 @implementation HHFood
 
+- (id)copyWithZone:(NSZone *)zone {
+    HHFood *food = [[[self class] alloc] init];
+    food.name = [self.name copy];
+    return food;
+}
+
+- (id)mutableCopyWithZone:(NSZone *)zone {
+    HHFood *food = [[[self class] alloc] init];
+    food.name = [self.name mutableCopy];
+    return food;
+}
 
 @end
 
