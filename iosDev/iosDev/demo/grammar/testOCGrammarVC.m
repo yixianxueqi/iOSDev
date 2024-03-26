@@ -32,6 +32,7 @@
     [self testKeywordOBJC];
     [self testNameSpace];
     [self testCopy];
+    [self testChangeFrame];
 }
 
 
@@ -128,6 +129,39 @@
     NSLog(@"copy: %@", foodc);
     HHFood *foodmc = [food mutableCopy];
     NSLog(@"mutableCopy: %@", foodmc);
+}
+
+- (void)testChangeFrame {
+    
+    /*
+     swift可以直接赋值
+     */
+//    let tempView = UIView()
+//    tempView.frame = CGRect(x: 10.0, y: 20.0, width: 30.0, height: 40.0)
+//    tempView.frame.origin.x = 15.0
+//    debugPrint("\(tempView.frame)")
+    
+    /*
+     oc不能直接赋值；
+     tempView.frame.origin.x = 15.0;  >> Expression is not assignable
+     解释：
+     [[self image] frame].origin.x = 20;
+     而Objective-C只是对C语言的一个扩展，所以，上面这句话会被转成C语言的函数调用形式，类似于这种形式：
+     getframe().origin.x = 20;
+     而在C语言里，函数的返回值是一个R-Value，是不能直接给它赋值的（所谓的R-Value，就是只能出现在等号的右边，你可以理解成是一个常量；
+     而可以被赋值的是L-Value，可以出现在等号的左边，通常是变量）。因此，当你打算直接给函数的返回值赋值的时候，编译器告诉你"这个表达式无法被赋值"。这就是这个错误的出现原因。
+     总结：
+     作为对象属性的结构体不能直接修改该结构体的属性，只能整体修改该结构体；
+     独立的结构体可以直接修改该结构体的属性。
+     */
+    UIView *tempView = [[UIView alloc] init];
+    tempView.frame = CGRectMake(10.0, 20.0, 30.0, 40.0);
+//    tempView.frame.origin.x = 15.0;
+    CGRect frame = tempView.frame;
+    frame.origin.x = 15.0;
+    tempView.frame = frame;
+    NSLog(@"%@", NSStringFromCGRect(tempView.frame));
+    
 }
 
 @end

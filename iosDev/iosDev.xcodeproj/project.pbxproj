@@ -19,6 +19,16 @@
 		050944112BA28FED00BF5F79 /* testBlockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050944102BA28FED00BF5F79 /* testBlockVC.swift */; };
 		050944142BA2900E00BF5F79 /* testQueueOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050944132BA2900E00BF5F79 /* testQueueOCViewController.m */; };
 		050944172BA2901E00BF5F79 /* testBlockOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050944162BA2901E00BF5F79 /* testBlockOCViewController.m */; };
+		0535B6E92BB19C2F005CF835 /* HHVideoCompreeeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535B6E82BB19C2F005CF835 /* HHVideoCompreeeTools.m */; };
+		0535B6EC2BB19DE7005CF835 /* HHAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0535B6EB2BB19DE7005CF835 /* HHAssetExtension.swift */; };
+		0535B6F02BB1A573005CF835 /* UIDevice+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535B6EF2BB1A573005CF835 /* UIDevice+Info.m */; };
+		0535B6F72BB1A642005CF835 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535B6F22BB1A641005CF835 /* UIView+Frame.m */; };
+		0535B6F82BB1A642005CF835 /* UIView+ShowTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535B6F42BB1A642005CF835 /* UIView+ShowTipView.m */; };
+		0535B6F92BB1A642005CF835 /* UIButton+Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535B6F62BB1A642005CF835 /* UIButton+Touch.m */; };
+		0535B6FE2BB1A6B7005CF835 /* NSFileManager+FileAssist.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535B6FC2BB1A6B7005CF835 /* NSFileManager+FileAssist.m */; };
+		0535B6FF2BB1A6B7005CF835 /* NSNumber+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535B6FD2BB1A6B7005CF835 /* NSNumber+Format.m */; };
+		0535B7012BB2649E005CF835 /* testDeviceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0535B7002BB2649E005CF835 /* testDeviceInfoVC.swift */; };
+		0535B7032BB272FF005CF835 /* testTipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0535B7022BB272FF005CF835 /* testTipVC.swift */; };
 		05BEF5BC2B47DB08005C2405 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5BB2B47DB08005C2405 /* AppDelegate.m */; };
 		05BEF5BF2B47DB08005C2405 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF5BE2B47DB08005C2405 /* SceneDelegate.m */; };
 		05BEF5C52B47DB08005C2405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BEF5C32B47DB08005C2405 /* Main.storyboard */; };
@@ -60,6 +70,23 @@
 		050944132BA2900E00BF5F79 /* testQueueOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testQueueOCViewController.m; sourceTree = "<group>"; };
 		050944152BA2901E00BF5F79 /* testBlockOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testBlockOCViewController.h; sourceTree = "<group>"; };
 		050944162BA2901E00BF5F79 /* testBlockOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testBlockOCViewController.m; sourceTree = "<group>"; };
+		0535B6E72BB19C2F005CF835 /* HHVideoCompreeeTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHVideoCompreeeTools.h; sourceTree = "<group>"; };
+		0535B6E82BB19C2F005CF835 /* HHVideoCompreeeTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHVideoCompreeeTools.m; sourceTree = "<group>"; };
+		0535B6EB2BB19DE7005CF835 /* HHAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHAssetExtension.swift; sourceTree = "<group>"; };
+		0535B6EE2BB1A573005CF835 /* UIDevice+Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Info.h"; sourceTree = "<group>"; };
+		0535B6EF2BB1A573005CF835 /* UIDevice+Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Info.m"; sourceTree = "<group>"; };
+		0535B6F12BB1A641005CF835 /* UIButton+Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Touch.h"; sourceTree = "<group>"; };
+		0535B6F22BB1A641005CF835 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		0535B6F32BB1A641005CF835 /* UIView+ShowTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShowTipView.h"; sourceTree = "<group>"; };
+		0535B6F42BB1A642005CF835 /* UIView+ShowTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShowTipView.m"; sourceTree = "<group>"; };
+		0535B6F52BB1A642005CF835 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		0535B6F62BB1A642005CF835 /* UIButton+Touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Touch.m"; sourceTree = "<group>"; };
+		0535B6FA2BB1A6B7005CF835 /* NSFileManager+FileAssist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+FileAssist.h"; sourceTree = "<group>"; };
+		0535B6FB2BB1A6B7005CF835 /* NSNumber+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Format.h"; sourceTree = "<group>"; };
+		0535B6FC2BB1A6B7005CF835 /* NSFileManager+FileAssist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+FileAssist.m"; sourceTree = "<group>"; };
+		0535B6FD2BB1A6B7005CF835 /* NSNumber+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Format.m"; sourceTree = "<group>"; };
+		0535B7002BB2649E005CF835 /* testDeviceInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDeviceInfoVC.swift; sourceTree = "<group>"; };
+		0535B7022BB272FF005CF835 /* testTipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTipVC.swift; sourceTree = "<group>"; };
 		05BEF5B72B47DB08005C2405 /* iosDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BEF5BA2B47DB08005C2405 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05BEF5BB2B47DB08005C2405 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -180,6 +207,33 @@
 			path = block;
 			sourceTree = "<group>";
 		};
+		0535B6EA2BB19DC3005CF835 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				0535B6EB2BB19DE7005CF835 /* HHAssetExtension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		0535B6ED2BB1A55B005CF835 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				0535B6EE2BB1A573005CF835 /* UIDevice+Info.h */,
+				0535B6EF2BB1A573005CF835 /* UIDevice+Info.m */,
+				0535B6F12BB1A641005CF835 /* UIButton+Touch.h */,
+				0535B6F62BB1A642005CF835 /* UIButton+Touch.m */,
+				0535B6F52BB1A642005CF835 /* UIView+Frame.h */,
+				0535B6F22BB1A641005CF835 /* UIView+Frame.m */,
+				0535B6F32BB1A641005CF835 /* UIView+ShowTipView.h */,
+				0535B6F42BB1A642005CF835 /* UIView+ShowTipView.m */,
+				0535B6FA2BB1A6B7005CF835 /* NSFileManager+FileAssist.h */,
+				0535B6FC2BB1A6B7005CF835 /* NSFileManager+FileAssist.m */,
+				0535B6FB2BB1A6B7005CF835 /* NSNumber+Format.h */,
+				0535B6FD2BB1A6B7005CF835 /* NSNumber+Format.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
 		05BEF5AE2B47DB08005C2405 = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +297,8 @@
 				05D386DD2B6B6F3F00A4FC27 /* multiThread */,
 				05D386D82B68EC4200A4FC27 /* testBitVC.swift */,
 				05D386E32B6B798C00A4FC27 /* testTimerVC.swift */,
+				0535B7002BB2649E005CF835 /* testDeviceInfoVC.swift */,
+				0535B7022BB272FF005CF835 /* testTipVC.swift */,
 				05DA33342B8605FF00F3DE8F /* gesture */,
 			);
 			path = demo;
@@ -252,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				05BEF5DD2B47ED1B005C2405 /* HHGlobal.h */,
+				0535B6ED2BB1A55B005CF835 /* category */,
 				05DA333A2B86E40F00F3DE8F /* tools */,
 			);
 			path = oc;
@@ -260,6 +317,7 @@
 		05BEF5D62B47E787005C2405 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				0535B6EA2BB19DC3005CF835 /* extension */,
 				050943F42B91AEFD00BF5F79 /* algorithm */,
 				05D386E02B6B78F600A4FC27 /* timer */,
 				05D386DA2B6A260C00A4FC27 /* operation */,
@@ -315,6 +373,8 @@
 			children = (
 				05DA33372B86E40700F3DE8F /* HHSystemTools.h */,
 				05DA33382B86E40700F3DE8F /* HHSystemTools.m */,
+				0535B6E72BB19C2F005CF835 /* HHVideoCompreeeTools.h */,
+				0535B6E82BB19C2F005CF835 /* HHVideoCompreeeTools.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -454,7 +514,9 @@
 				050943FB2B91B01300BF5F79 /* testAlgorithmVC.swift in Sources */,
 				05BEF5E52B47F3EF005C2405 /* ConfigWindowUI.swift in Sources */,
 				05D386DC2B6A264200A4FC27 /* HHSimpleOperation.swift in Sources */,
+				0535B6FE2BB1A6B7005CF835 /* NSFileManager+FileAssist.m in Sources */,
 				05BEF5DC2B47EC13005C2405 /* PrefixHeaderSwift.swift in Sources */,
+				0535B7032BB272FF005CF835 /* testTipVC.swift in Sources */,
 				050944172BA2901E00BF5F79 /* testBlockOCViewController.m in Sources */,
 				05DA33362B86063C00F3DE8F /* SimpleGestureView.swift in Sources */,
 				05BEF5E02B47EFA4005C2405 /* BaseNavigationController.swift in Sources */,
@@ -462,8 +524,14 @@
 				05BEF5E72B47FC46005C2405 /* MainVC.swift in Sources */,
 				05BEF5EB2B47FC99005C2405 /* ThirdVC.swift in Sources */,
 				050944012B973C1700BF5F79 /* CommonModel.swift in Sources */,
+				0535B6F92BB1A642005CF835 /* UIButton+Touch.m in Sources */,
 				05DA33332B8605DB00F3DE8F /* testGestureVC.swift in Sources */,
+				0535B6E92BB19C2F005CF835 /* HHVideoCompreeeTools.m in Sources */,
+				0535B6F02BB1A573005CF835 /* UIDevice+Info.m in Sources */,
+				0535B6F82BB1A642005CF835 /* UIView+ShowTipView.m in Sources */,
+				0535B6F72BB1A642005CF835 /* UIView+Frame.m in Sources */,
 				050944092B98851900BF5F79 /* HHBinaryTree.swift in Sources */,
+				0535B7012BB2649E005CF835 /* testDeviceInfoVC.swift in Sources */,
 				05D386E42B6B798C00A4FC27 /* testTimerVC.swift in Sources */,
 				050944142BA2900E00BF5F79 /* testQueueOCViewController.m in Sources */,
 				05D386DF2B6B6F7300A4FC27 /* testSimpleOperationVC.swift in Sources */,
@@ -477,9 +545,11 @@
 				050943FE2B97399E00BF5F79 /* testGrammarVC.swift in Sources */,
 				05D386E22B6B790C00A4FC27 /* HHTimerManager.swift in Sources */,
 				05D386D92B68EC4200A4FC27 /* testBitVC.swift in Sources */,
+				0535B6FF2BB1A6B7005CF835 /* NSNumber+Format.m in Sources */,
 				05BEF5D92B47E7C9005C2405 /* GlobalDefine.swift in Sources */,
 				05BEF5CD2B47DB0B005C2405 /* main.m in Sources */,
 				05BEF5BF2B47DB08005C2405 /* SceneDelegate.m in Sources */,
+				0535B6EC2BB19DE7005CF835 /* HHAssetExtension.swift in Sources */,
 				0509440B2B99D80300BF5F79 /* LCGoldenAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,6 +706,7 @@
 				GCC_PREFIX_HEADER = "${SRCROOT}/iosDev/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosDev/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iOSDev;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -672,6 +743,7 @@
 				GCC_PREFIX_HEADER = "${SRCROOT}/iosDev/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosDev/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iOSDev;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -59,6 +59,11 @@ class SecondVC: UIViewController {
             let timerVC = testTimerVC()
             self?.navigationController?.pushViewController(timerVC, animated: true)
         }))
+        dataList.append(("UIDevice Category", {[weak self] in
+            let deviceInfoVC = testDeviceInfoVC()
+            self?.navigationController?.pushViewController(deviceInfoVC, animated: true)
+        }))
+        
     }
 }
 

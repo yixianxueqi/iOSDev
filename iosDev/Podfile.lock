@@ -3,6 +3,7 @@ PODS:
   - FDFullscreenPopGesture (1.1)
   - Hue (5.0.0)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
   - SnapKit (5.6.0)
   - SwiftyJSON (5.0.1)
 
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - FDFullscreenPopGesture (= 1.1)
   - Hue (= 5.0.0)
   - Masonry (= 1.1.0)
+  - MBProgressHUD (= 1.2.0)
   - SnapKit (= 5.6.0)
   - SwiftyJSON (= 5.0.1)
 
@@ -20,6 +22,7 @@ SPEC REPOS:
     - FDFullscreenPopGesture
     - Hue
     - Masonry
+    - MBProgressHUD
     - SnapKit
     - SwiftyJSON
 
@@ -28,9 +31,10 @@ SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: d35f56aa10e50d11f65b77726407ea06b774d3b5
+PODFILE CHECKSUM: 3967c082a4f327858a4ea20ece98a8cef007b4a9
 
 COCOAPODS: 1.12.1

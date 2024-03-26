@@ -6,3 +6,9 @@
 #import "testOCGrammarVC.h"
 #import "testBlockOCViewController.h"
 #import "testQueueOCViewController.h"
+
+// category
+#import "UIDevice+Info.h"
+#import "UIView+Frame.h"
+#import "UIView+ShowTipView.h"
+#import "NSFileManager+FileAssist.h"

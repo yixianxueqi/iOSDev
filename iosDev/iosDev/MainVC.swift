@@ -55,6 +55,10 @@ class MainVC: UIViewController {
             let testGestureVC = testGestureVC()
             self?.navigationController?.pushViewController(testGestureVC, animated: true)
         }))
+        dataList.append(("testTipVC", {[weak self] in
+            let tipVC = testTipVC()
+            self?.navigationController?.pushViewController(tipVC, animated: true)
+        }))
     }
     
 }
